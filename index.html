@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>The Academic Atelier - Dashboard</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#6f7a73",
+                        "inverse-primary": "#83d7b4",
+                        "surface-container": "#edeeef",
+                        "surface-bright": "#f8f9fa",
+                        "secondary-container": "#c6e7d6",
+                        "primary": "#00503a",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#bec9c2",
+                        "primary-container": "#006a4e",
+                        "surface": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
+                        "secondary": "#466557",
+                        "on-surface": "#191c1d",
+                        "background": "#f8f9fa",
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-surface text-on-surface antialiased overflow-hidden">
+    <aside
+        class="w-[8.5rem] h-screen fixed left-0 top-0 bg-[#f8f9fa] dark:bg-slate-900 flex flex-col py-8 gap-10 font-['Manrope'] tracking-tight z-50 border-r border-outline-variant/15">
+        <div class="px-6 mb-4">
+            <div class="text-xl font-bold text-[#00503a] dark:text-emerald-500 leading-tight">Academic Atelier</div>
+        </div>
+        <nav class="flex flex-col gap-1">
+            <a class="group flex flex-col items-center py-4 border-l-4 border-[#00503a] text-[#00503a] font-bold pl-4 hover:bg-[#f3f4f5] dark:hover:bg-slate-800 transition-colors"
+                href="#">
+                <span class="material-symbols-outlined mb-1">account_tree</span>
+                <span class="text-[10px] uppercase tracking-widest">Curriculum</span>
+            </a>
+        </nav>
+    </aside>
+
+    <header
+        class="fixed top-0 right-0 w-[calc(100%-8.5rem)] z-40 bg-[#f8f9fa]/80 backdrop-blur-md flex justify-between items-center px-12 h-20 shadow-[0_24px_48px_rgba(0,106,78,0.04)] font-['Manrope'] font-semibold">
+        <div class="flex items-center gap-12">
+            <h1 class="text-2xl text-primary font-bold">Sistema de Planificación</h1>
+        </div>
+        <div class="flex items-center gap-6">
+            <button id="btn-calcular"
+                class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full text-sm font-bold editorial-shadow hover:scale-[1.02] active:scale-95 transition-all">
+                Calcular Ruta de Prelaciones
+            </button>
+        </div>
+    </header>
+
+    <main class="ml-[8.5rem] mt-20 h-[calc(100vh-5rem)] flex overflow-hidden">
+
+        <aside class="w-96 bg-surface-container-low border-r border-outline-variant/15 flex flex-col overflow-y-auto">
+            <div class="p-8 pb-4">
+                <h2 class="text-2xl font-black font-headline text-primary mb-2">Subject Ledger</h2>
+                <p class="text-xs text-on-surface-variant font-medium uppercase tracking-widest mb-8">Ingeniería en
+                    Computación</p>
+            </div>
+            <div class="px-6 space-y-4 pb-12">
+                <div
+                    class="bg-surface-container-lowest p-6 rounded-xl hover:shadow-lg transition-all cursor-pointer group border-l-4 border-primary">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="bg-secondary-container px-2 py-1 rounded text-[10px] font-bold">IS101</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-on-surface text-lg mb-1">Matemática I</h3>
+                    <p class="text-[10px] font-semibold text-on-surface-variant uppercase italic">Requiere: Matemática 0
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <section
+            class="flex-1 bg-surface relative canvas-dot-grid flex flex-col items-center justify-center overflow-hidden">
+
+            <div id="grafo-canvas" class="absolute inset-0 z-10 w-full h-full" style="display: none;"></div>
+
+            <div id="empty-state" class="max-w-md text-center z-20">
+                <div class="mb-10 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 rounded-full bg-gradient-to-tr from-primary/5 to-primary-container/20 blur-3xl absolute -top-10 -left-10 animate-pulse">
+                        </div>
+                        <span class="material-symbols-outlined text-primary/20 text-[120px]">hub</span>
+                    </div>
+                </div>
+                <h3 class="text-2xl font-black font-headline text-on-surface mb-4">Awaiting Curricular Flow</h3>
+                <p class="text-on-surface-variant font-body leading-relaxed mb-8">
+                    Haz clic en <span class="text-primary font-bold">"Calcular Ruta de Prelaciones"</span> para
+                    visualizar tu mapa académico.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
