@@ -53,7 +53,7 @@
     <aside
         class="w-[8.5rem] h-screen fixed left-0 top-0 bg-[#f8f9fa] dark:bg-slate-900 flex flex-col py-8 gap-10 font-['Manrope'] tracking-tight z-50 border-r border-outline-variant/15">
         <div class="px-6 mb-4">
-            <div class="text-xl font-bold text-[#00503a] dark:text-emerald-500 leading-tight">Academic Atelier</div>
+            <div class="text-xl font-bold text-[#00503a] dark:text-emerald-500 leading-tight">Materias UVM</div>
         </div>
         <nav class="flex flex-col gap-1">
             <a class="group flex flex-col items-center py-4 border-l-4 border-[#00503a] text-[#00503a] font-bold pl-4 hover:bg-[#f3f4f5] dark:hover:bg-slate-800 transition-colors"
@@ -67,12 +67,13 @@
     <header
         class="fixed top-0 right-0 w-[calc(100%-8.5rem)] z-40 bg-[#f8f9fa]/80 backdrop-blur-md flex justify-between items-center px-12 h-20 shadow-[0_24px_48px_rgba(0,106,78,0.04)] font-['Manrope'] font-semibold">
         <div class="flex items-center gap-12">
-            <h1 class="text-2xl text-primary font-bold">Sistema de Planificación</h1>
+            <h1 class="text-2xl text-primary font-bold">Sistema de Planificación Académica</h1>
         </div>
-        <div class="flex items-center gap-6">
+
+        <div class="flex items-center gap-4">
             <button id="btn-calcular"
                 class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-3 rounded-full text-sm font-bold editorial-shadow hover:scale-[1.02] active:scale-95 transition-all">
-                Calcular Ruta de Prelaciones
+                Calcular Ruta Óptima
             </button>
         </div>
     </header>
@@ -82,12 +83,32 @@
         <aside
             class="w-96 bg-surface-container-low border-r border-outline-variant/15 flex flex-col overflow-y-auto z-20">
             <div class="p-8 pb-4">
-                <h2 class="text-2xl font-black font-headline text-primary mb-2">Subject Ledger</h2>
-                <p class="text-xs text-on-surface-variant font-medium uppercase tracking-widest mb-8">Ingeniería en
+                <h2 class="text-2xl font-black font-headline text-primary mb-2">Materias</h2>
+                <p id="titulo-carrera"
+                    class="text-xs text-on-surface-variant font-medium uppercase tracking-widest mb-6">Ingeniería en
                     Computación</p>
+
+                <div
+                    class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/20 shadow-[0_8px_16px_rgba(0,80,58,0.02)] mb-8">
+                    <label class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">Selecciona tu
+                        Carrera</label>
+
+                    <div class="flex flex-col gap-3">
+                        <button
+                            class="btn-carrera w-full py-3 px-4 rounded-xl font-bold text-sm transition-all bg-primary text-white shadow-md"
+                            data-file="materias.json" data-name="Ingeniería en Computación">
+                            Ingeniería en Computación
+                        </button>
+                        <button
+                            class="btn-carrera w-full py-3 px-4 rounded-xl font-bold text-sm transition-all bg-surface-container-low text-on-surface-variant border border-outline-variant/50 hover:bg-surface-container hover:text-primary"
+                            data-file="industrial.json" data-name="Ingeniería Industrial">
+                            Ingeniería Industrial
+                        </button>
+                    </div>
+                </div>
             </div>
 
-            <div id="lista-materias" class="px-6 space-y-4 pb-12">
+            <div id="lista-materias" class="px-6 space-y-3 pb-12">
             </div>
         </aside>
 
@@ -96,19 +117,21 @@
 
             <div id="grafo-canvas" class="absolute inset-0 w-full h-full" style="display: none;"></div>
 
-            <div id="empty-state" class="max-w-md text-center z-20">
+            <div id="empty-state" class="max-w-md text-center z-20 p-8">
                 <div class="mb-10 flex justify-center">
                     <div class="relative">
                         <div
                             class="w-64 h-64 rounded-full bg-gradient-to-tr from-primary/5 to-primary-container/20 blur-3xl absolute -top-10 -left-10 animate-pulse">
                         </div>
-                        <span class="material-symbols-outlined text-primary/20 text-[120px]">hub</span>
+                        <span class="material-symbols-outlined text-primary/10 text-[140px]">account_tree</span>
                     </div>
                 </div>
-                <h3 class="text-2xl font-black font-headline text-on-surface mb-4">Awaiting Curricular Flow</h3>
-                <p class="text-on-surface-variant font-body leading-relaxed mb-8">
-                    Haz clic en <span class="text-primary font-bold">"Calcular Ruta de Prelaciones"</span> para
-                    visualizar tu mapa académico.
+                <h3 class="text-3xl font-black font-headline text-on-surface mb-5 tracking-tighter">Esperando Orden a
+                    Tomar</h3>
+                <p class="text-on-surface-variant font-body leading-relaxed mb-10 text-sm">
+                    Haz clic en una carrera en el panel izquierdo o presiona <span
+                        class="text-primary font-bold">"Calcular Ruta Óptima"</span> para visualizar el mapa académico
+                    completo.
                 </p>
             </div>
 

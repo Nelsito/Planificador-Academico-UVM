@@ -1,0 +1,424 @@
+[
+    {
+        "codigo": "IS100",
+        "nombre": "Matemática 0",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS501",
+        "nombre": "Comunicación y lenguaje",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS509",
+        "nombre": "Metodología del aprendizaje",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11101",
+        "nombre": "Introducción a la ingeniería industrial",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "HM001",
+        "nombre": "Humanitas 1",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS101",
+        "nombre": "Matemática I",
+        "semestre": 2,
+        "prelaciones": [
+            "IS100"
+        ]
+    },
+    {
+        "codigo": "IS106",
+        "nombre": "Geometría analítica",
+        "semestre": 2,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11201",
+        "nombre": "Geometría descriptiva I",
+        "semestre": 2,
+        "prelaciones": [
+            "IS100"
+        ]
+    },
+    {
+        "codigo": "11302",
+        "nombre": "Química I",
+        "semestre": 2,
+        "prelaciones": []
+    },
+    {
+        "codigo": "HM002",
+        "nombre": "Humanitas II",
+        "semestre": 2,
+        "prelaciones": [
+            "HM001"
+        ]
+    },
+    {
+        "codigo": "IS102",
+        "nombre": "Matemática II",
+        "semestre": 3,
+        "prelaciones": [
+            "IS101"
+        ]
+    },
+    {
+        "codigo": "11200",
+        "nombre": "Física I",
+        "semestre": 3,
+        "prelaciones": [
+            "IS106"
+        ]
+    },
+    {
+        "codigo": "11301",
+        "nombre": "Geometría descriptiva II",
+        "semestre": 3,
+        "prelaciones": [
+            "11201"
+        ]
+    },
+    {
+        "codigo": "11402",
+        "nombre": "Química II",
+        "semestre": 3,
+        "prelaciones": [
+            "11302"
+        ]
+    },
+    {
+        "codigo": "11420",
+        "nombre": "Laboratorio de química",
+        "semestre": 3,
+        "prelaciones": [
+            "11302"
+        ]
+    },
+    {
+        "codigo": "PS304",
+        "nombre": "Geohistoria humana",
+        "semestre": 3,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS111",
+        "nombre": "Matemática III",
+        "semestre": 4,
+        "prelaciones": [
+            "IS102"
+        ]
+    },
+    {
+        "codigo": "11300",
+        "nombre": "Física II",
+        "semestre": 4,
+        "prelaciones": [
+            "11200"
+        ]
+    },
+    {
+        "codigo": "11405",
+        "nombre": "Dibujo asistido por el computador",
+        "semestre": 4,
+        "prelaciones": [
+            "11301"
+        ]
+    },
+    {
+        "codigo": "IS205",
+        "nombre": "Estadística descriptiva",
+        "semestre": 4,
+        "prelaciones": [
+            "IS101"
+        ]
+    },
+    {
+        "codigo": "11410",
+        "nombre": "Mecánica racional",
+        "semestre": 4,
+        "prelaciones": [
+            "11200"
+        ]
+    },
+    {
+        "codigo": "11205",
+        "nombre": "Computación I",
+        "semestre": 4,
+        "prelaciones": []
+    },
+    {
+        "codigo": "FS322",
+        "nombre": "Desarrollo de emprendedores I",
+        "semestre": 4,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS114",
+        "nombre": "Matemática IV",
+        "semestre": 5,
+        "prelaciones": [
+            "IS111"
+        ]
+    },
+    {
+        "codigo": "11506",
+        "nombre": "Electrotecnia",
+        "semestre": 5,
+        "prelaciones": [
+            "11300"
+        ]
+    },
+    {
+        "codigo": "11504",
+        "nombre": "Termodinámica",
+        "semestre": 5,
+        "prelaciones": [
+            "11402"
+        ]
+    },
+    {
+        "codigo": "IS206",
+        "nombre": "Estadística aplicada",
+        "semestre": 5,
+        "prelaciones": [
+            "IS205"
+        ]
+    },
+    {
+        "codigo": "11503",
+        "nombre": "Resistencia de materiales",
+        "semestre": 5,
+        "prelaciones": [
+            "11410"
+        ]
+    },
+    {
+        "codigo": "11830",
+        "nombre": "Higiene y seguridad industrial",
+        "semestre": 5,
+        "prelaciones": []
+    },
+    {
+        "codigo": "FS323",
+        "nombre": "Desarrollo de emprendedores II",
+        "semestre": 5,
+        "prelaciones": [
+            "FS322"
+        ]
+    },
+    {
+        "codigo": "FS307",
+        "nombre": "Ingeniería económica",
+        "semestre": 6,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11910",
+        "nombre": "Control de calidad",
+        "semestre": 6,
+        "prelaciones": [
+            "IS206"
+        ]
+    },
+    {
+        "codigo": "11711",
+        "nombre": "Diseño de máquinas",
+        "semestre": 6,
+        "prelaciones": [
+            "11503"
+        ]
+    },
+    {
+        "codigo": "11604",
+        "nombre": "Mecánica de fluidos",
+        "semestre": 6,
+        "prelaciones": [
+            "11410"
+        ]
+    },
+    {
+        "codigo": "11305",
+        "nombre": "Computación II",
+        "semestre": 6,
+        "prelaciones": [
+            "11205"
+        ]
+    },
+    {
+        "codigo": "FS324",
+        "nombre": "Desarrollo de emprendedores III",
+        "semestre": 6,
+        "prelaciones": [
+            "FS323"
+        ]
+    },
+    {
+        "codigo": "11608",
+        "nombre": "Ingeniería de costos",
+        "semestre": 7,
+        "prelaciones": [
+            "FS307"
+        ]
+    },
+    {
+        "codigo": "11712",
+        "nombre": "Procesos de manufactura",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11908",
+        "nombre": "Ingeniería de métodos",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11811",
+        "nombre": "Administración de recursos humanos",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11710",
+        "nombre": "Plantas industriales",
+        "semestre": 7,
+        "prelaciones": [
+            "11604"
+        ]
+    },
+    {
+        "codigo": "ZS216",
+        "nombre": "Ingeniería ambiental",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "FS325",
+        "nombre": "Desarrollo de emprendedores IV",
+        "semestre": 7,
+        "prelaciones": [
+            "FS324"
+        ]
+    },
+    {
+        "codigo": "IS210",
+        "nombre": "Investigación de operaciones I",
+        "semestre": 8,
+        "prelaciones": []
+    },
+    {
+        "codigo": "11820",
+        "nombre": "Formulación y evaluación de proyectos",
+        "semestre": 8,
+        "prelaciones": [
+            "11608"
+        ]
+    },
+    {
+        "codigo": "11808",
+        "nombre": "Ingeniería de producción",
+        "semestre": 8,
+        "prelaciones": [
+            "11908"
+        ]
+    },
+    {
+        "codigo": "11911",
+        "nombre": "Gerencia industrial",
+        "semestre": 8,
+        "prelaciones": [
+            "11811"
+        ]
+    },
+    {
+        "codigo": "11806",
+        "nombre": "Mantenimiento industrial",
+        "semestre": 8,
+        "prelaciones": [
+            "11710"
+        ]
+    },
+    {
+        "codigo": "11810",
+        "nombre": "Automatismo industrial",
+        "semestre": 8,
+        "prelaciones": [
+            "11710",
+            "IS114"
+        ]
+    },
+    {
+        "codigo": "IS211",
+        "nombre": "Investigación de operaciones II",
+        "semestre": 9,
+        "prelaciones": [
+            "IS210"
+        ]
+    },
+    {
+        "codigo": "PS423",
+        "nombre": "Módulo de investigación",
+        "semestre": 9,
+        "prelaciones": [
+            "IS210",
+            "11820",
+            "11808",
+            "11911",
+            "11806",
+            "11810"
+        ]
+    },
+    {
+        "codigo": "ELEC1",
+        "nombre": "Electiva I",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "ELEC2",
+        "nombre": "Electiva II",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "ELEC3",
+        "nombre": "Electiva III",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS425",
+        "nombre": "Trabajo de grado",
+        "semestre": 10,
+        "prelaciones": [
+            "IS211",
+            "PS423",
+            "ELEC1",
+            "ELEC2",
+            "ELEC3"
+        ]
+    },
+    {
+        "codigo": "11321",
+        "nombre": "Prácticas profesionales",
+        "semestre": 10,
+        "prelaciones": [
+            "IS211",
+            "PS423",
+            "ELEC1",
+            "ELEC2",
+            "ELEC3"
+        ]
+    }
+]
