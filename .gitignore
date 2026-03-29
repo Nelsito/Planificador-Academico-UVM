@@ -1,0 +1,9 @@
+# Dependencias de Node (SÚPER IMPORTANTE IGNORAR ESTO)
+node_modules/
+
+# Archivos multimedia generados automáticamente por Cypress
+cypress/videos/
+cypress/screenshots/
+
+# Archivos del sistema operativo Mac
+.DS_Store
