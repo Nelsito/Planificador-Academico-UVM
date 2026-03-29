@@ -1,0 +1,412 @@
+[
+    {
+        "codigo": "IS100",
+        "nombre": "Matemática 0",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS501",
+        "nombre": "Comunicación y lenguaje",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS509",
+        "nombre": "Metodología del aprendizaje",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS510",
+        "nombre": "Lógica",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS405",
+        "nombre": "Elementos de Computación",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "HM001",
+        "nombre": "Humanitas 1",
+        "semestre": 1,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS101",
+        "nombre": "Matemática I",
+        "semestre": 2,
+        "prelaciones": [
+            "IS100"
+        ]
+    },
+    {
+        "codigo": "IS106",
+        "nombre": "Geometría analítica",
+        "semestre": 2,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS416",
+        "nombre": "Taller de computación",
+        "semestre": 2,
+        "prelaciones": [
+            "PS510",
+            "IS405"
+        ]
+    },
+    {
+        "codigo": "IS408",
+        "nombre": "Estructura de datos I",
+        "semestre": 2,
+        "prelaciones": [
+            "PS510",
+            "IS405"
+        ]
+    },
+    {
+        "codigo": "IS109",
+        "nombre": "Algebra lineal",
+        "semestre": 2,
+        "prelaciones": []
+    },
+    {
+        "codigo": "HM002",
+        "nombre": "Humanitas II",
+        "semestre": 2,
+        "prelaciones": [
+            "HM001"
+        ]
+    },
+    {
+        "codigo": "IS102",
+        "nombre": "Matemática II",
+        "semestre": 3,
+        "prelaciones": [
+            "IS101"
+        ]
+    },
+    {
+        "codigo": "ES225",
+        "nombre": "Principios de electricidad",
+        "semestre": 3,
+        "prelaciones": [
+            "IS101"
+        ]
+    },
+    {
+        "codigo": "IS409",
+        "nombre": "Estructura de datos II",
+        "semestre": 3,
+        "prelaciones": [
+            "IS416",
+            "IS408"
+        ]
+    },
+    {
+        "codigo": "IS410",
+        "nombre": "Base de datos I",
+        "semestre": 3,
+        "prelaciones": [
+            "IS416",
+            "IS408"
+        ]
+    },
+    {
+        "codigo": "IS110",
+        "nombre": "Algebra de estructura",
+        "semestre": 3,
+        "prelaciones": [
+            "IS109"
+        ]
+    },
+    {
+        "codigo": "PS304",
+        "nombre": "Geohistoria Humana",
+        "semestre": 3,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS111",
+        "nombre": "Matemática III",
+        "semestre": 4,
+        "prelaciones": [
+            "IS102"
+        ]
+    },
+    {
+        "codigo": "IS507",
+        "nombre": "Ingeniería de la programación",
+        "semestre": 4,
+        "prelaciones": [
+            "IS409",
+            "IS410"
+        ]
+    },
+    {
+        "codigo": "CS401",
+        "nombre": "Física",
+        "semestre": 4,
+        "prelaciones": [
+            "IS106"
+        ]
+    },
+    {
+        "codigo": "IS205",
+        "nombre": "Estadística descriptiva",
+        "semestre": 4,
+        "prelaciones": [
+            "IS101"
+        ]
+    },
+    {
+        "codigo": "ES119",
+        "nombre": "Diseño lógico I",
+        "semestre": 4,
+        "prelaciones": [
+            "ES225"
+        ]
+    },
+    {
+        "codigo": "FS322",
+        "nombre": "Desarrollo de emprendedores I",
+        "semestre": 4,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS114",
+        "nombre": "Matemática IV",
+        "semestre": 5,
+        "prelaciones": [
+            "IS111"
+        ]
+    },
+    {
+        "codigo": "IS401",
+        "nombre": "Programación",
+        "semestre": 5,
+        "prelaciones": [
+            "IS507"
+        ]
+    },
+    {
+        "codigo": "IS502",
+        "nombre": "Análisis y diseño de sistemas I",
+        "semestre": 5,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS206",
+        "nombre": "Estadística aplicada",
+        "semestre": 5,
+        "prelaciones": [
+            "IS205"
+        ]
+    },
+    {
+        "codigo": "ES120",
+        "nombre": "Diseño lógico II",
+        "semestre": 5,
+        "prelaciones": [
+            "ES119"
+        ]
+    },
+    {
+        "codigo": "FS323",
+        "nombre": "Desarrollo de Emprendedores",
+        "semestre": 5,
+        "prelaciones": [
+            "FS322"
+        ]
+    },
+    {
+        "codigo": "FS307",
+        "nombre": "Ingeniería económica",
+        "semestre": 6,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS501",
+        "nombre": "Programación de sistemas",
+        "semestre": 6,
+        "prelaciones": [
+            "IS401"
+        ]
+    },
+    {
+        "codigo": "IS406",
+        "nombre": "Metodología numérica",
+        "semestre": 6,
+        "prelaciones": [
+            "IS114"
+        ]
+    },
+    {
+        "codigo": "IS411",
+        "nombre": "Computación gráfica",
+        "semestre": 6,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS404",
+        "nombre": "Arquitectura del computador",
+        "semestre": 6,
+        "prelaciones": [
+            "ES120"
+        ]
+    },
+    {
+        "codigo": "FS324",
+        "nombre": "Desarrollo de emprendedores",
+        "semestre": 6,
+        "prelaciones": [
+            "FS323"
+        ]
+    },
+    {
+        "codigo": "IS115",
+        "nombre": "Matemática combinatoria",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS210",
+        "nombre": "Investigación de operaciones I",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS504",
+        "nombre": "Comunicación de datos I",
+        "semestre": 7,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS503",
+        "nombre": "Sistemas operativos I",
+        "semestre": 7,
+        "prelaciones": [
+            "IS501"
+        ]
+    },
+    {
+        "codigo": "EG110",
+        "nombre": "Microprocesadores I",
+        "semestre": 7,
+        "prelaciones": [
+            "IS404"
+        ]
+    },
+    {
+        "codigo": "FS325",
+        "nombre": "Desarrollo de emprendedores IV",
+        "semestre": 7,
+        "prelaciones": [
+            "FS324"
+        ]
+    },
+    {
+        "codigo": "IS211",
+        "nombre": "Investigación de operaciones II",
+        "semestre": 8,
+        "prelaciones": [
+            "IS210"
+        ]
+    },
+    {
+        "codigo": "IS505",
+        "nombre": "Proyecto de sistemas",
+        "semestre": 8,
+        "prelaciones": [
+            "EG110"
+        ]
+    },
+    {
+        "codigo": "ZS215",
+        "nombre": "Gestión ambiental",
+        "semestre": 8,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS412",
+        "nombre": "Lenguaje y compiladores",
+        "semestre": 8,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS514",
+        "nombre": "Conocimiento científico del mundo físico",
+        "semestre": 8,
+        "prelaciones": []
+    },
+    {
+        "codigo": "IS506",
+        "nombre": "Seminario de computación",
+        "semestre": 8,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS423",
+        "nombre": "Módulo de Investigación",
+        "semestre": 9,
+        "prelaciones": [
+            "IS211",
+            "IS505",
+            "ZS215",
+            "IS412",
+            "PS514",
+            "IS506"
+        ]
+    },
+    {
+        "codigo": "ELEC1",
+        "nombre": "Electiva I",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "ELEC2",
+        "nombre": "Electiva II",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "ELEC3",
+        "nombre": "Electiva III",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "ELEC4",
+        "nombre": "Electiva IV",
+        "semestre": 9,
+        "prelaciones": []
+    },
+    {
+        "codigo": "PS425",
+        "nombre": "Trabajo de grado",
+        "semestre": 10,
+        "prelaciones": [
+            "PS423",
+            "ELEC1",
+            "ELEC2",
+            "ELEC3",
+            "ELEC4"
+        ]
+    },
+    {
+        "codigo": "IS321",
+        "nombre": "Prácticas profesionales",
+        "semestre": 10,
+        "prelaciones": [
+            "PS423",
+            "ELEC1",
+            "ELEC2",
+            "ELEC3",
+            "ELEC4"
+        ]
+    }
+]
