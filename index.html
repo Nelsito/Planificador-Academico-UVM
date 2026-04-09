@@ -136,24 +136,62 @@
 
             <div id="grafo-canvas" class="absolute inset-0 w-full h-full" style="display: none;"></div>
 
-            <div id="leyenda-simulador"
-                class="absolute top-8 left-8 bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 p-4 rounded-xl shadow-sm z-30 hidden">
-                <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">Progreso Académico</p>
-                <div class="flex flex-col gap-2 text-xs font-semibold text-on-surface">
-                    <div class="flex items-center gap-2">
-                        <div class="w-4 h-4 rounded bg-primary border border-[#002116]"></div> Aprobada (Doble Clic)
+            <!-- Contenedor apilado: leyenda existente + nuevo panel de simulador -->
+            <div id="simulador-panel-container"
+                class="absolute top-8 left-8 flex flex-col gap-3 z-30" style="max-width:284px">
+
+                <!-- Leyenda existente — sin cambios en IDs ni en lógica JS -->
+                <div id="leyenda-simulador"
+                    class="bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 p-4 rounded-xl shadow-sm hidden">
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">Progreso Académico</p>
+                    <div class="flex flex-col gap-2 text-xs font-semibold text-on-surface">
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 rounded bg-primary border border-[#002116]"></div> Aprobada
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 rounded bg-[#ef4444] border border-[#991b1b]"></div> Reprobada
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 rounded bg-inverse-primary border border-primary"></div> Disponible
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-4 h-4 rounded bg-white border border-primary"></div> Bloqueada
+                        </div>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-4 h-4 rounded bg-inverse-primary border border-primary"></div> Disponible
+                    <p class="text-[9px] text-slate-400 mt-3 leading-tight">Doble clic cicla:<br>sin estado → aprobada → reprobada → sin estado</p>
+                </div>
+
+                <!-- NUEVO: Panel de análisis de prelaciones y filtro de semestre -->
+                <div id="panel-proximo-semestre"
+                    class="bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 p-4 rounded-xl shadow-sm hidden"
+                    style="max-height:calc(100vh - 310px);overflow-y:auto">
+
+                    <!-- Filtro de semestre para el grafo -->
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Ver Semestre en Grafo</p>
+                    <div class="flex items-center gap-2 mb-3">
+                        <select id="select-semestre"
+                            class="flex-1 bg-surface-container text-xs font-semibold text-on-surface rounded-lg px-2 py-1.5 border border-outline-variant/50 focus:outline-none focus:ring-1 focus:ring-primary">
+                            <option value="">-- Todo el plan --</option>
+                        </select>
+                        <button id="btn-ver-semestre"
+                            class="bg-primary text-white text-[10px] font-bold px-2.5 py-1.5 rounded-lg hover:opacity-90 active:scale-95 transition-all whitespace-nowrap">
+                            Ver
+                        </button>
                     </div>
-                    <div class="flex items-center gap-2">
-                        <div class="w-4 h-4 rounded bg-white border border-primary"></div> Bloqueada
+
+                    <div class="h-px w-full bg-outline-variant/30 mb-3"></div>
+
+                    <!-- Análisis automático de prelaciones del siguiente semestre -->
+                    <p class="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Análisis de Prelaciones</p>
+                    <div id="proximo-semestre-contenido" class="flex flex-col gap-1">
+                        <p class="text-xs text-slate-400 italic">Marca materias aprobadas para ver el análisis.</p>
                     </div>
                 </div>
+
             </div>
 
             <div id="interruptor-ruta"
-                class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-surface-container-lowest border border-outline-variant/30 p-1.5 rounded-full shadow-lg flex gap-1 z-30 hidden">
+                class="absolute bottom-8 left-1/2 -translate-x-1/2 bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant/30 p-1.5 rounded-full shadow-lg flex gap-1 z-30 hidden">
                 <button id="btn-atras"
                     class="px-6 py-2.5 rounded-full text-xs font-bold transition-all bg-primary text-white shadow-md">
                     ← Prerrequisitos
